@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;  
+}
+  
+.card-header, .card-footer {
+    background-color: #fff;
+    border: none;
+}
+
+.card-image-goeland {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+img {
+    width: 99%;
+    margin: 0 auto;
+}
+
+.pagination {
+    margin-left: 1rem;
+}
+
+/* Ascenseur */
+#bouton_remonter {
+	display: none;
+	position: fixed;
+	bottom: 90px;
+	right: 10px;
+	z-index: 99;
+	opacity: 0.6;
+}
+#bouton_remonter:hover {
+	transition-duration: 0.7s;
+	opacity: 0.3;
+}
+/* Fin */

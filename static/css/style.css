@@ -39,3 +39,7 @@ img {
 	opacity: 0.3;
 }
 /* Fin */
+
+#map { 
+    height: 600px; 
+}

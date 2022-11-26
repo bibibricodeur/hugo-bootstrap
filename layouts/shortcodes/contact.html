@@ -1,0 +1,32 @@
+<h2>Situation</h2>
+
+<div class="card">
+    <div class="card-body">
+        <div id="map">
+
+        </div>
+    </div>
+</div>
+
+<script>
+
+window.addEventListener("DOMContentLoaded", (event) => {
+    initialize_leaflet()
+});
+// https://www.google.com/maps/@45.8651568,-0.3220654,49m/data=!3m1!1e3?hl=fr
+
+// https://leafletjs.com/examples/quick-start/
+
+function initialize_leaflet() {
+    var map = L.map('map').setView([45.8651568, -0.3220654], 18); 
+
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+
+    var marker = L.marker([45.8652568, -0.3220654]).addTo(map).bindTooltip("Je n'habite pas ici ! :)", {permanent: true});
+
+}
+
+</script>
